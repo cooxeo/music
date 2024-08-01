@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* Tailwind CSS */
+.projects-container {
+  @apply flex flex-wrap gap-4; /* Flexbox container with gap */
+}
+
+.project-item {
+  @apply flex flex-col gap-4 mx-12 justify-between max-w-full my-24 w-[650px]; /* Flex items side by side with gap */
+}
+
+.project-image {
+  @apply max-w-full; /* Ensure image fits within container */
+}
+
+.project-text {
+  @apply flex-1; /* Allow text to take remaining space */
+}
