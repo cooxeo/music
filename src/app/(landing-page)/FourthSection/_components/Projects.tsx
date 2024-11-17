@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import img1 from '/public/assets/img1.jpg'; // Ensure this path is correct
 
 export default function Projects() {
@@ -25,15 +25,17 @@ export default function Projects() {
             <Image
               src={project.src}
               alt={project.title}
-              width={300} 
+              width={300}
               height={200}
               layout="responsive"
               className="project-image object-cover"
             />
           </div>
           <div className="project-text">
-            <h3 className='text-2xl font-bold my-3'>{project.title}</h3>
-            <p className='text-sm font-semibold w-[500px] leading-8'>{project.description}</p>
+            <h3 className="text-2xl font-bold my-3">{project.title}</h3>
+            <p className="text-sm font-semibold w-[500px] leading-8">
+              {project.description}
+            </p>
           </div>
         </div>
       ))}
